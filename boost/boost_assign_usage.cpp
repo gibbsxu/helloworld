@@ -6,6 +6,7 @@
 void assign_list_of_usage()
 {
     using namespace boost::assign;
+
     std::list<int> primes = list_of(2)(3)(5)(7)(11);
     assert(primes.size() == 5);
     assert(primes.front() == 2);
@@ -22,9 +23,9 @@ void assign_list_of_usage()
 void assign_std_vector_usage()
 {
     using namespace boost::assign;
+
     std::vector<int> values;
     values += 0, 1, 2, 3, 4, 5, 6, 7, 8, 9;
-
     assert(values.size() == 10);
     assert(values[0] == 0);
     assert(values[9] == 9);
@@ -35,6 +36,7 @@ void assign_std_vector_usage()
 void assign_list_inserter_usage()
 {
     using namespace boost::assign;
+
     std::map<std::string, int> months;
     insert(months)
         ("January",   31)("February", 28)("March",     31)("April",    30)
