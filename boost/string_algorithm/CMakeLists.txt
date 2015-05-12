@@ -10,11 +10,11 @@ SET(SRC_LIST boost_string_algorithm_usage.cpp)
 
 INCLUDE_DIRECTORIES(
     "./include"
-    "${BOOST_STRING_ALGORITHM_SOURCE_DIR}/${WORK_ROOT}/third-64/boost/include"
+    "${BOOST_STRING_ALGORITHM_SOURCE_DIR}/${WORK_ROOT}/boost/include"
 )
 
 LINK_DIRECTORIES(
-    "${BOOST_STRING_ALGORITHM_SOURCE_DIR}/${WORK_ROOT}/third-64/boost/lib"
+    "${BOOST_STRING_ALGORITHM_SOURCE_DIR}/${WORK_ROOT}/boost/lib"
 )
 
 ADD_DEFINITIONS(
