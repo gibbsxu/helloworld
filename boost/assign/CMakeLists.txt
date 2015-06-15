@@ -10,11 +10,11 @@ SET(SRC_LIST boost_assign_usage.cpp)
 
 INCLUDE_DIRECTORIES(
     "./include"
-    "${BOOST_ASSIGN_SOURCE_DIR}/${WORK_ROOT}/third-64/boost/include"
+    "${BOOST_ASSIGN_SOURCE_DIR}/${WORK_ROOT}/boost/include"
 )
 
 LINK_DIRECTORIES(
-    "${BOOST_ASSIGN_SOURCE_DIR}/${WORK_ROOT}/third-64/boost/lib"
+    "${BOOST_ASSIGN_SOURCE_DIR}/${WORK_ROOT}/boost/lib"
 )
 
 ADD_DEFINITIONS(
