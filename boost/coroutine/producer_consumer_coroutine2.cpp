@@ -8,9 +8,8 @@
 typedef int Product;
 typedef boost::coroutines::asymmetric_coroutine<Product> coro_t;
 
-Product product = 0;
-
 void producer_worker(coro_t::push_type& sink) {
+    Product product = 0;
     while (product <= 10) {
         std::cout << boost::format("producer produce %1%\n") % product;
         boost::this_thread::sleep(boost::posix_time::milliseconds(1000));
