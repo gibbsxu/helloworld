@@ -16,8 +16,8 @@ int main(int argc, char *argv[]) {
     // 初始化连接
     mysql_init(&mysql_connection);
     // 连接数据库
-    if (mysql_real_connect(&mysql_connection, "localhost", "hatlonely",
-                           "sissie", "employees", 3306, NULL, 0) == nullptr) {
+    if (mysql_real_connect(&mysql_connection, "localhost", "username",
+                           "passwd", "employees", 3306, NULL, 0) == nullptr) {
         std::cout << "connect failed." << std::endl;
         return -1;
     }
