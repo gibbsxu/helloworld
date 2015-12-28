@@ -37,6 +37,12 @@ MAIN_NAMESPACE(protobuf_protobuf)
 MAIN_NAMESPACE(thrift_tutorial_server)
 MAIN_NAMESPACE(thrift_tutorial_client)
 
+// socket
+MAIN_NAMESPACE(socket_server1)
+MAIN_NAMESPACE(socket_server2)
+MAIN_NAMESPACE(socket_server3)
+MAIN_NAMESPACE(socket_client)
+
 int main(int argc, char* argv[]) {
-    return boost_any::main(argc, argv);
+    return socket_client::main(argc, argv);
 }
