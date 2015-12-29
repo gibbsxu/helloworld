@@ -14,6 +14,9 @@ MAIN_NAMESPACE(boost_assign)
 MAIN_NAMESPACE(boost_regex)
 MAIN_NAMESPACE(boost_algorithm_string)
 MAIN_NAMESPACE(boost_any)
+MAIN_NAMESPACE(boost_bimap)
+MAIN_NAMESPACE(boost_flat)
+MAIN_NAMESPACE(boost_heap)
 
 // hiredis
 MAIN_NAMESPACE(hiredis_hiredis)
@@ -44,5 +47,5 @@ MAIN_NAMESPACE(socket_server3)
 MAIN_NAMESPACE(socket_client)
 
 int main(int argc, char* argv[]) {
-    return socket_client::main(argc, argv);
+    return boost_heap::main(argc, argv);
 }
