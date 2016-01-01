@@ -8,8 +8,8 @@ def main():
     jsonstr = """{
         "name": "hatlonely",
         "email": "hatlonely@gmail.com",
-        "age": 9,
-        "array": ["a", "b"]
+        "age": 24,
+        "skill": ["java", "c++"]
     }"""
 
     jsonobj = json.loads(jsonstr)

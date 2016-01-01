@@ -18,6 +18,7 @@ MAIN_NAMESPACE(boost_bimap)
 MAIN_NAMESPACE(boost_flat)
 MAIN_NAMESPACE(boost_heap)
 MAIN_NAMESPACE(boost_multi_index)
+MAIN_NAMESPACE(boost_property_tree)
 
 // hiredis
 MAIN_NAMESPACE(hiredis_hiredis)
@@ -48,5 +49,5 @@ MAIN_NAMESPACE(socket_server3)
 MAIN_NAMESPACE(socket_client)
 
 int main(int argc, char* argv[]) {
-    return boost_multi_index::main(argc, argv);
+    return boost_property_tree::main(argc, argv);
 }
