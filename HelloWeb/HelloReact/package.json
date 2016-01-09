@@ -1,0 +1,17 @@
+{
+    "name": "hello-react",
+    "version": "0.1.0",
+    "description": "Sample project use react",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hatlonely/helloworld.git"
+    },
+    "private": false,
+    "dependencies": {
+        "react": "^0.14.0",
+        "react-dom": "^0.14.0",
+        "react-tap-event-plugin": "^0.2.1",
+        "babelify": "^6.1.2",
+        "jquery": "^2.1.4"
+    }
+}

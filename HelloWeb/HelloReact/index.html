@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="./node_modules/react/dist/react.min.js"></script>
+    <script src="./node_modules/react-dom/dist/react-dom.js"></script>
+    <script src="./node_modules/babelify/node_modules/babel-core/browser.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <title>hello react</title>
+</head>
+
+<body>
+    <!-- 这些示例来源于：https://github.com/ruanyf/react-demos -->
+    <div id="demo1"></div>
+    <div id="demo2"></div>
+    <div id="demo3"></div>
+    <div id="demo4"></div>
+    <div id="demo5"></div>
+    <div id="demo6"></div>
+    <div id="demo7"></div>
+    <div id="demo8"></div>
+    <div id="demo9"></div>
+    <div id="demo10"></div>
+    <div id="demo11"></div>
+    <script type="text/babel">
+    {
+        React.render(<h1>Hello, world!</h1>, document.getElementById('demo1'));
+    } {
+        var names = ['sissie', 'hatlonely', 'robin'];
+        React.render(<div>{
+            names.map(function (name) {
+                return <p>Hello {name}!</p>
+            })
+        }</div>, document.getElementById('demo2'));
+    } {
+        var elements = [
+            <h2>Hello world!</h2>,
+            <h2>Hello react!</h2>
+        ];
+        React.render(<div>{elements}</div>, document.getElementById('demo3'));
+    } {
+        var HelloMessage = React.createClass({
+            render: function () {
+                return <h2>Hello {this.props.name}!</h2>
+            }
+        });
+        React.render(<HelloMessage name='sissie' />, document.getElementById('demo4'));
+    } {
+        var NoteList = React.createClass({
+            render: function () {
+                return <ol>{
+                    this.props.children.map(function (child) {
+                        return <li>{child}</li>
+                    })
+                }</ol>
+            }
+        });
+        React.render(
+            <NoteList>
+                <span>apple</span>
+                <span>google</span>
+                <span>facebook</span>
+                <span>amazon</span>
+            </NoteList>
+            , document.getElementById('demo5')
+        );
+    } {
+        var MyTitle = React.createClass({
+            propTypes: {
+                title: React.PropTypes.string.isRequired
+            },
+            render: function () {
+                return <h2>{this.props.title}</h2>
+            }
+        });
+        var title = 'Hello react!';
+        React.render(<MyTitle title={title} />, document.getElementById('demo6'));
+    } {
+        var MyComponent = React.createClass({
+            handleClick: function () {
+                React.findDOMNode(this.refs.myTextInput).focus();
+            },
+            render: function () {
+                return <div>
+                    <input type="text" ref="myTextInput" />
+                    <input type="button" value="Focus the text input" onClick={this.handleClick} />
+                </div>
+            }
+        });
+        React.render(<MyComponent />, document.getElementById('demo7'));
+    } {
+        var LikeButton = React.createClass({
+            getInitialState: function () {
+                return {
+                    liked: false
+                };
+            },
+            handleClick: function () {
+                this.setState({
+                    liked: !this.state.liked
+                });
+            },
+            render: function () {
+                var text = this.state.liked ? 'liked' : 'haven\'t liked';
+                return <p onClick={this.handleClick}>You {text} this. click to toggle.</p>
+            }
+        });
+        React.render(<LikeButton />, document.getElementById('demo8'));
+    } {
+        var MyInput = React.createClass({
+            getInitialState: function () {
+                return {
+                    value: 'Hello!'
+                };
+            },
+            handleChange: function (event) {
+                this.setState({
+                    value: event.target.value
+                });
+            },
+            render: function () {
+                var value = this.state.value;
+                return <div>
+                    <input type="text" value={value} onChange={this.handleChange} />
+                    <p>the value is: {value}</p>
+                </div>
+            }
+        });
+        React.render(<MyInput />, document.getElementById('demo9'));
+    } {
+        var HelloTimer = React.createClass({
+            getInitialState: function () {
+                return {
+                    opacity: 1.0
+                };
+            },
+            componentDidMount: function () {
+                this.timer = setInterval(function () {
+                    var opacity = this.state.opacity;
+                    opacity -= 0.05;
+                    if (opacity < 0.1) {
+                        opacity = 1.0;
+                    }
+                    this.setState({
+                        opacity: opacity
+                    });
+                }.bind(this), 100);
+            },
+            render: function () {
+                return <div style={{opacity: this.state.opacity}}>
+                    Hello {this.props.name}
+                </div>
+            }
+        });
+        React.render(<HelloTimer name="world" />, document.getElementById('demo10'));
+    } {
+        var UserGist = React.createClass({
+            getInitialState: function () {
+                return {
+                    username: '',
+                    lastgist: ''
+                };
+            },
+            componentDidMount: function () {
+                $.get(this.props.source, function (result) {
+                    if (this.isMounted()) {
+                        this.setState({
+                            username: result[0].owner.login,
+                            lastgist: result[0].html_url
+                        });
+                    }
+                }.bind(this));
+            },
+            render: function () {
+                return <div>
+                    <h3>username: {this.state.username}</h3>
+                    <p>lastgist: {this.state.lastgist}</p>
+                </div>
+            }
+        });
+        React.render(
+            <UserGist source="https://api.github.com/users/octocat/gists" />,
+            document.getElementById('demo11')
+        );
+    }
+    </script>
+</body>
+
+</html>
