@@ -20,6 +20,7 @@ MAIN_NAMESPACE(boost_heap)
 MAIN_NAMESPACE(boost_multi_index)
 MAIN_NAMESPACE(boost_property_tree)
 MAIN_NAMESPACE(boost_crc)
+MAIN_NAMESPACE(boost_math)
 
 // hiredis
 MAIN_NAMESPACE(hiredis_hiredis)
@@ -50,5 +51,5 @@ MAIN_NAMESPACE(socket_server3)
 MAIN_NAMESPACE(socket_client)
 
 int main(int argc, char* argv[]) {
-    return boost_crc::main(argc, argv);
+    return boost_math::main(argc, argv);
 }
