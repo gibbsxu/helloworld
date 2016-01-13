@@ -6,7 +6,7 @@
 //  Copyright © 2015年 hatlonely. All rights reserved.
 //
 
-#define MAIN_NAMESPACE(name) namespace name { extern int main(int argc, char *argv[]); }
+#define MAIN_NAMESPACE(name) namespace name { extern int main(int argc, const char *argv[]); }
 
 // boost
 MAIN_NAMESPACE(boost_lexical_cast)
@@ -50,6 +50,6 @@ MAIN_NAMESPACE(socket_server2)
 MAIN_NAMESPACE(socket_server3)
 MAIN_NAMESPACE(socket_client)
 
-int main(int argc, char* argv[]) {
+int main(int argc, const char* argv[]) {
     return boost_math::main(argc, argv);
 }

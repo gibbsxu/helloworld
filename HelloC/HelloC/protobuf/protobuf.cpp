@@ -14,7 +14,7 @@
 
 namespace protobuf_protobuf {
 
-int main(int argc, char *argv[]) {
+int main(int argc, const char *argv[]) {
     char *buff = new char[1024];
     int length = 0;
     {

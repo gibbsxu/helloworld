@@ -70,7 +70,7 @@ void usage() {
     }
 }
 
-int main(int argc, char* argv[]) {
+int main(int argc, const char* argv[]) {
     benchmark();
     usage();
     return 0;

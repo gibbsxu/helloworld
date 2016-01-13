@@ -13,7 +13,7 @@
 
 namespace boost_crc {
 
-int main(int argc, char *argv[]) {
+int main(int argc, const char *argv[]) {
     {
         // "123456789"
         uint8_t const data[] = {0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38, 0x39};

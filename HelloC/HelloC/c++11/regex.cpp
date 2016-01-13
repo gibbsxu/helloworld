@@ -13,7 +13,7 @@
 
 namespace c11_regex {
 
-int main(int argc, char *argv[]) {
+int main(int argc, const char *argv[]) {
     std::string context = ""
     "hatlonely (hatlonely@gmail.com) "
     "playjokes (playjokes@gmail.com)";

@@ -14,7 +14,7 @@
 
 namespace boost_bimap {
 
-int main(int argc, char *argv[]) {
+int main(int argc, const char *argv[]) {
     boost::bimap<int, std::string> bm;
     bm.insert(boost::bimap<int, std::string>::value_type(1, "sissie"));
     bm.insert(boost::bimap<int, std::string>::value_type(2, "playjokes"));

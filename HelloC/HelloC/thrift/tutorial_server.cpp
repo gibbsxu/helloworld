@@ -114,7 +114,7 @@ public:
     }
 };
 
-int main(int argc, char *argv[]) {
+int main(int argc, const char *argv[]) {
     typedef ::apache::thrift::TProcessor TProcessor;
     typedef ::apache::thrift::TProcessorFactory TProcessorFactory;
     typedef ::apache::thrift::transport::TServerTransport TServerTransport;

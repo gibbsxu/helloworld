@@ -46,7 +46,7 @@ ssize_t writen(int fd, void *buff, size_t n) {
     return n;
 }
 
-int main(int argc, char *argv[]) {
+int main(int argc, const char *argv[]) {
     int server_fd = socket(AF_INET, SOCK_STREAM, 0);
     if (server_fd < 0) {
         perror("socket failed.\n");

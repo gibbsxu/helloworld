@@ -106,7 +106,7 @@ void string_algorithm_join_usage() {
     assert(boost::join(result, ", ") == "hatlonely, playjokes, robin, sissie, sky");
 }
 
-int main(int argc, char *argv[]) {
+int main(int argc, const char *argv[]) {
     string_algorithm_predicate_usage();
     string_algorithm_trim_usage();
     string_algorithm_find_usage();

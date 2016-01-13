@@ -11,7 +11,7 @@
 
 namespace mysql_connector_c {
 
-int main(int argc, char *argv[]) {
+int main(int argc, const char *argv[]) {
     MYSQL mysql_connection;
     // 初始化连接
     mysql_init(&mysql_connection);

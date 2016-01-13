@@ -12,7 +12,7 @@
 
 namespace boost_any {
 
-int main(int argc, char *argv[]) {
+int main(int argc, const char *argv[]) {
     std::list<boost::any> any_list;
     any_list.push_back(10);
     any_list.push_back(std::string("hatlonely"));

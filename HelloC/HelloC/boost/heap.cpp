@@ -5,7 +5,7 @@
 //  Created by hatlonely on 15/12/29.
 //  Copyright © 2015年 hatlonely. All rights reserved.
 //
-//  最大堆
+//  最大堆，这个东西std里面也有
 //
 
 
@@ -14,7 +14,7 @@
 
 namespace boost_heap {
 
-int main(int argc, char *argv[]) {
+int main(int argc, const char *argv[]) {
     boost::heap::priority_queue<int> pq;
     
     pq.push(4);

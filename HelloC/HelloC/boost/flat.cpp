@@ -16,7 +16,7 @@
 
 namespace boost_flat {
 
-int main(int argc, char *argv[]) {
+int main(int argc, const char *argv[]) {
     {
         boost::container::flat_map<std::string, int> fm;
         fm["one"] = 1;

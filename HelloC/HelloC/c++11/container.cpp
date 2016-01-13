@@ -103,7 +103,7 @@ void unordered_usage() {
     }
 }
 
-int main(int argc, char *argv[]) {
+int main(int argc, const char *argv[]) {
     vector_usage();
     array_usage();
     forward_list_usage();

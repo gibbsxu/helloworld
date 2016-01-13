@@ -127,7 +127,7 @@ void regex_token_iterator_usage() {
     assert(matchs[1] == "[ request_type: 4 ]");
 }
 
-int main(int argc, char *argv[]) {
+int main(int argc, const char *argv[]) {
     regex_match_usage();
     regex_search_usage();
     regex_replace_usage();

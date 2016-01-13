@@ -11,7 +11,7 @@
 
 namespace c11_smart_ptr {
 
-int main(int argc, char *argv[]) {
+int main(int argc, const char *argv[]) {
     {
         std::unique_ptr<int> upi(new int(6));
     }

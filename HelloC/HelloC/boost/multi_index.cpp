@@ -183,7 +183,7 @@ void name_record_main() {
 
 }
 
-int main(int argc, char *argv[]) {
+int main(int argc, const char *argv[]) {
     employee_main();
     name_record_main();
     

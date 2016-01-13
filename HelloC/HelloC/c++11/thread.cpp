@@ -134,7 +134,7 @@ void atomic_usage() {
     std::cout << ai << std::endl;
 }
 
-int main(int argc, char *argv[]) {
+int main(int argc, const char *argv[]) {
     thread_usage();
     mutex_usage();
     condition_variable_usage();

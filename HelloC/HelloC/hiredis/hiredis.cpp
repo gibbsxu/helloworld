@@ -18,7 +18,7 @@
 
 namespace hiredis_hiredis {
 
-int main(int argc, char *argv[]) {
+int main(int argc, const char *argv[]) {
     const char *host = (argc > 1) ? argv[1] : "127.0.0.1";
     int port = (argc > 2) ? atoi(argv[2]) : 6379;
     struct timeval timeout = { 1, 500000 };

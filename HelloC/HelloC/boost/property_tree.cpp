@@ -16,7 +16,7 @@
 
 namespace boost_property_tree {
 
-int main(int argc, char *argv[]) {
+int main(int argc, const char *argv[]) {
     {
         // 创建 property_tree 对象
         // {"name": "hatlonely", "age": 24, "skill": ["java", "c++"], "email": "hatlonely@gmail.com"}

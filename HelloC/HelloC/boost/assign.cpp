@@ -74,7 +74,7 @@ void assign_list_inserter_usage() {
 
 namespace boost_assign {
 
-int main(int argc, char *argv[]) {
+int main(int argc, const char *argv[]) {
     assign_list_of_usage();
     assign_std_vector_usage();
     assign_list_inserter_usage();

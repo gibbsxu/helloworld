@@ -97,7 +97,7 @@ void lambda_usage() {
     std::cout << f();   // 44
 }
 
-int main(int argc, char *argv[]) {
+int main(int argc, const char *argv[]) {
     initialization_usage();
     auto_usage();
     for_usage();

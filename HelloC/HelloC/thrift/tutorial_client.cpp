@@ -20,7 +20,7 @@
 
 namespace thrift_tutorial_client {
 
-int main(int argc, char *argv[]) {
+int main(int argc, const char *argv[]) {
     typedef ::apache::thrift::transport::TTransport TTransport;
     typedef ::apache::thrift::transport::TSocket TSocket;
     typedef ::apache::thrift::protocol::TProtocol TProtocol;

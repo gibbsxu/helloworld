@@ -11,7 +11,7 @@
 
 namespace c11_random {
 
-int main(int argc, char *argv[]) {
+int main(int argc, const char *argv[]) {
     {
         std::random_device rd;
         for (int i = 0; i < 10; i++) {

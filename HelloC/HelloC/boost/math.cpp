@@ -13,7 +13,7 @@
 
 namespace boost_math {
     
-int main(int argc, char *argv[]) {
+int main(int argc, const char *argv[]) {
     {
         // 最大公约数和最小公倍数
         assert(boost::math::gcd(36, 24) == 12);

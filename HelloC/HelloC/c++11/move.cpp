@@ -107,7 +107,7 @@ private:
     int* _data;     // The resource.
 };
 
-int main(int argc, char *argv[]) {
+int main(int argc, const char *argv[]) {
     // Create a vector object and add a few elements to it.
     std::vector<MemoryBlock> v;
     v.reserve(3);
