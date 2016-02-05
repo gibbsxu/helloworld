@@ -46,7 +46,5 @@ void HelloNSDate() {
                                                                              toDate:date2
                                                                             options:0];
         NSLog(@"%ld", (long)[dateComponents day]);
-    } {
-        
     }
 }
