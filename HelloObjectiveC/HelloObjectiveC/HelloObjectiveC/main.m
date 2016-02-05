@@ -11,12 +11,14 @@
 void HelloNSNumber();
 void HelloNSString();
 void HelloNSArray();
+void HelloNSDictionary();
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         HelloNSNumber();
         HelloNSString();
         HelloNSArray();
+        HelloNSDictionary();
     }
     return 0;
 }
