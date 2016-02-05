@@ -33,5 +33,13 @@ void HelloNSSet() {
         [set1 intersectSet:set2];   // 交集   set1 = set1 ∩ set2
         [set1 minusSet:set2];       // 差集   set1 = set1 - set2
         [set1 unionSet:set2];       // 并集   set1 = set1 ∪ set2
+    } {
+        NSIndexSet *indexSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, 9)];
+        BOOL contain = [indexSet containsIndex:8];
+    } {
+        NSMutableIndexSet *indexSet = [NSMutableIndexSet indexSetWithIndexesInRange:NSMakeRange(0, 9)];
+        [indexSet addIndex:9];
+        [indexSet removeIndex:5];
+        NSLog(@"%@, %lu", indexSet, [indexSet count]);
     }
 }
