@@ -13,6 +13,7 @@ void HelloNSString();
 void HelloNSArray();
 void HelloNSDictionary();
 void HelloNSDate();
+void HelloNSSet();
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -21,6 +22,7 @@ int main(int argc, const char * argv[]) {
         HelloNSArray();
         HelloNSDictionary();
         HelloNSDate();
+        HelloNSSet();
     }
     return 0;
 }

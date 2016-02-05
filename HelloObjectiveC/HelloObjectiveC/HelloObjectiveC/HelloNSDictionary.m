@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#pragma clang diagnostic ignored "-Wunused-variable"
+
 void HelloNSDictionary() {
     {
         NSDictionary *dict = @{
