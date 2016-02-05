@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#pragma clang diagnostic ignored "-Wunused-variable"
+
 void HelloNSNumber() {
     {
         NSInteger num1 = 10;
