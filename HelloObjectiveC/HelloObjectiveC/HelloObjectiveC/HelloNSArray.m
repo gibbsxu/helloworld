@@ -41,10 +41,12 @@ void HelloNSArray() {
             NSLog(@"%lu %@", i, name);
         }];
     } {
-        // join
+        // join and split
         NSArray *names = @[@"小白", @"小璐", @"马青", @"杨重"];
         NSString *join = [names componentsJoinedByString:@", "];
+        NSArray *split = [join componentsSeparatedByString:@", "];
         NSLog(@"%@", join);
+        NSLog(@"%@", split);
     } {
         // sort
         NSArray *nums = @[@4, @6, @1, @3, @2, @5];
