@@ -7,7 +7,7 @@
 //
 
 #define MAIN_NAMESPACE(name) namespace name { extern int main(int argc, const char *argv[]); }
-
+#include <chrono>
 // boost
 MAIN_NAMESPACE(boost_lexical_cast)
 MAIN_NAMESPACE(boost_assign)
@@ -21,6 +21,8 @@ MAIN_NAMESPACE(boost_multi_index)
 MAIN_NAMESPACE(boost_property_tree)
 MAIN_NAMESPACE(boost_crc)
 MAIN_NAMESPACE(boost_math)
+MAIN_NAMESPACE(boost_date_time)
+MAIN_NAMESPACE(boost_asio_asio_server)
 
 // hiredis
 MAIN_NAMESPACE(hiredis_hiredis)
@@ -36,6 +38,7 @@ MAIN_NAMESPACE(c11_regex)
 MAIN_NAMESPACE(c11_smart_ptr)
 MAIN_NAMESPACE(c11_move)
 MAIN_NAMESPACE(c11_thread)
+MAIN_NAMESPACE(c11_chrono)
 
 // protobuf
 MAIN_NAMESPACE(protobuf_protobuf)
@@ -51,5 +54,5 @@ MAIN_NAMESPACE(socket_server3)
 MAIN_NAMESPACE(socket_client)
 
 int main(int argc, const char* argv[]) {
-    return boost_math::main(argc, argv);
+    return boost_asio_asio_server::main(argc, argv);
 }
