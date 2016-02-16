@@ -102,12 +102,21 @@ void unordered_usage() {
         std::cout << book_price_pair.first << " => " << book_price_pair.second << std::endl;
     }
 }
+    
+void ordered_usage() {
+    std::set<int> si = {3, 7, 1, 2, 4, 8, 5, 9};
+    std::cout << *si.lower_bound(6) << std::endl;   // 7
+    std::cout << *si.upper_bound(6) << std::endl;   // 7
+    std::cout << *si.lower_bound(5) << std::endl;   // 5
+    std::cout << *si.upper_bound(5) << std::endl;   // 7
+}
 
 int main(int argc, const char *argv[]) {
     vector_usage();
     array_usage();
     forward_list_usage();
     unordered_usage();
+    ordered_usage();
     
     return 0;
 }
